@@ -1,18 +1,53 @@
 [
     {
-      "question": "Q1. What is the capital of India?",
-      "options": ["Delhi", "Mumbai", "Chennai", "Kolkata"],
-      "answer": "Delhi"
+      "question": "Q1. What is React primarily used for?",
+      "options": ["Building databases", "Styling web pages", "Building user interfaces", "Server-side scripting"],
+      "answer": "Building user interfaces"
     },
     {
-      "question": "Q2. 2 + 2 equals?",
-      "options": ["3", "4", "5", "6"],
-      "answer": "4"
+      "question": "Q2. What is a component in React?",
+      "options": ["database table", "A function or class that returns JSX", "A stylesheet file", "A server-side script"],
+      "answer": "A function or class that returns JSX"
     },
     {
-      "question": "Q3. Color of the sky?",
-      "options": ["Blue", "Green", "Red", "Yellow"],
-      "answer": "Blue"
+      "question": "Q3. What is JSX?",
+      "options": ["A JavaScript extension that allows HTML in JS", "A CSS framework", "A type of API", "A server configuration file"],
+      "answer": "A JavaScript extension that allows HTML in JS"
+    },
+    {
+      "question": "Q4. Which hook is used to handle state in functional components?",
+      "options": ["useFetch", "useData", "useState", "useRender"],
+      "answer": "useState"
+    },
+    {
+      "question": "Q5. Which method is used to pass data from parent to child component?",
+      "options": ["Redux", "Props", "State", "Context"],
+      "answer": "Props"
+    },
+    {
+      "question": "Q6. Which hook is used for side effects in React?",
+      "options": ["useEffect", "useSideEffect", "useState", "useReducer"],
+      "answer": "useEffect"
+    },
+    {
+      "question": "Q7. What does useEffect(() => {}, []) mean?",
+      "options": ["Runs after every render", "Runs once when component mounts", "ReRuns before renderd", "Never runs"],
+      "answer": "Runs once when component mounts"
+    },
+    {
+      "question": "Q8. What is the virtual DOM?",
+      "options": ["The browser DOM", "A copy of the real DOM for faster updates", "A server file system", "A database"],
+      "answer": "A copy of the real DOM for faster updates"
+    },
+    {
+      "question": "Q9. How do you create a React app easily?",
+      "options": ["create-app-react", "npm init react", "create-react-app", "react-init"],
+      "answer": "create-react-app"
+    },
+    {
+      "question": "Q10. How can you handle multiple state values in one object?",
+      "options": ["useEffect", "useRef", "useState with an object", "useState with array"],
+      "answer": "useState with an object"
     }
   ]
   

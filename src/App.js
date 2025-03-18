@@ -33,20 +33,34 @@ function App() {
     }
   };
 
-  
+  if (questions.length === 0) 
+  return <p>Loading...</p>;
+
+  const resetQuiz = () => {
+    setCurrent(0);
+    setScore(0);
+    setShowResult(false);
+    setSelected('');
+  };
 
   return (
     <>
-    {showResult ? (
-        <div>
+      <div className='quiz-container'>
+      <div>
+      <h4>React Quiz App</h4>
+      <p className='description'>Test your React knowledge with multiple-choice questions. Learn as you play!</p>
+      <div className='quizzes'>
+      <div className='editer-theme'><div style={{backgroundColor: "#FFD710"}}></div><div style={{backgroundColor: "#569CD6"}}></div><div style={{backgroundColor: "#64C991"}}></div></div>
+      <hr/>
+      {showResult ? (
+        <div className='restart'>
+          <div>
           <h2>Your Score: {score} / {questions.length}</h2>
-          <button onClick={() => window.location.reload()}>Restart</button>
+          <button onClick={resetQuiz}>Restart</button>
+          </div>
         </div>
       ) : (
-      <div className='quiz-container'>
-        <div className='quizzes'>
-          <div className='editer-theme'><div style={{backgroundColor: "#FFD710"}}></div><div style={{backgroundColor: "#569CD6"}}></div><div style={{backgroundColor: "#64C991"}}></div></div>
-          <hr/>
+        <div className='question-container'>
           <p className='questions'>{questions[current].question}</p>
           <form>
             {questions[current].options.map((opt, id) => (
@@ -59,15 +73,17 @@ function App() {
                   checked={selected === opt}
                   onChange={handleOptionChange}
                 />
-                <label htmlFor={`opt${id}`}>{opt}</label>
+                <label For={`opt${id}`}>{opt}</label>
               </div>
             ))}
           </form>
           <br />
-          <button onClick={handleNext} disabled={!selected}>Next</button>
+          <div className='next-container'><button style={{color:!selected ? "gray" : "#001427" }} className='nextbtn' onClick={handleNext} disabled={!selected}>Next</button></div>
+          </div>
+        )}
+        </div>
         </div>
       </div>
-       )}
     </>
   );
 }
