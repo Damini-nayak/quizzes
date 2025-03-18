@@ -1,0 +1,18 @@
+[
+    {
+      "question": "Q1. What is the capital of India?",
+      "options": ["Delhi", "Mumbai", "Chennai", "Kolkata"],
+      "answer": "Delhi"
+    },
+    {
+      "question": "Q2. 2 + 2 equals?",
+      "options": ["3", "4", "5", "6"],
+      "answer": "4"
+    },
+    {
+      "question": "Q3. Color of the sky?",
+      "options": ["Blue", "Green", "Red", "Yellow"],
+      "answer": "Blue"
+    }
+  ]
+  
