@@ -19,6 +19,10 @@ h6{
   align-items: center;
 }
 
+.child-container{
+  width: 50vw;
+}
+
 h4{
   color: #569CD6;
   text-align: center;

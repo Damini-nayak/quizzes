@@ -46,7 +46,7 @@ function App() {
   return (
     <>
       <div className='quiz-container'>
-      <div>
+      <div className='child-container'>
       <h4>React Quiz App</h4>
       <p className='description'>Test your React knowledge with multiple-choice questions. Learn as you play!</p>
       <div className='quizzes'>
