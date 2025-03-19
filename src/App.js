@@ -24,7 +24,7 @@ function App() {
       setScore(score + 1);
     }
 
-    setSelected(''); // Clear selection
+    setSelected('');
 
     if (current + 1 < questions.length) {
       setCurrent(current + 1);
